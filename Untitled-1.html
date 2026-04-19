@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica Bem-Estar - Página Inicial</title>
+    
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto; /* centraliza a página */
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Requisito: Uso de pelo menos 2 níveis de cabeçalhos */
+        h1 {
+            background-color: #336699;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #336699;
+            border-bottom: 2px solid #ccc;
+        }
+
+        /* Divs dos serviços (lado a lado com inline-block) */
+        .servico-card {
+            display: inline-block;
+            width: 400px;
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        /* Requisito: Mínimo de 2 imagens dos produtos/serviços */
+        .servico-card img {
+            width: 380px;
+            height: 250px;
+        }
+
+        /* Divs da equipe */
+        .equipe-card {
+            display: inline-block;
+            width: 250px;
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .equipe-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* deixa a foto redonda */
+        }
+
+        /* Estilo do formulário */
+        form {
+            border: 1px solid #336699;
+            padding: 20px;
+            background-color: #e9f2fa;
+            width: 400px;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            width: 300px;
+            padding: 5px;
+        }
+
+        button {
+            background-color: #336699;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Clínica Bem-Estar</h1>
+
+        <h2>Nossos Serviços</h2>
+        
+        <div class="servico-card">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=400&q=80" alt="Sessão de Fisioterapia">
+            <h3>Fisioterapia</h3>
+            <p>Sessões de fisioterapia para tratamento de dores musculares, recuperação de cirurgias e reabilitação de movimentos. Aparelhos modernos.</p>
+        </div>
+
+        <div class="servico-card">
+            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80" alt="Sessão de Acupuntura">
+            <h3>Acupuntura</h3>
+            <p>Tratamento com agulhas focado em pontos específicos do corpo para alívio de dores crônicas, enxaquecas e redução de estresse e ansiedade.</p>
+        </div>
+
+
+        <h2>Nossa Equipe</h2>
+        <div class="equipe-card">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=80" alt="Dra. Ana">
+            <h3>Ana Silva</h3>
+            <p><strong>Cargo:</strong> Fisioterapeuta</p>
+        </div>
+
+        <div class="equipe-card">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=200&q=80" alt="Dr. Carlos">
+            <h3>Carlos Mendes</h3>
+            <p><strong>Cargo:</strong> Acupunturista</p>
+        </div>
+
+        <div class="equipe-card">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Mariana">
+            <h3>Mariana Costa</h3>
+            <p><strong>Cargo:</strong> Recepcionista</p>
+        </div>
+
+
+        <h2>Agende uma Consulta</h2>
+        
+        <form action="">
+            <label>Nome Completo:</label>
+            <input type="text" name="nome_paciente">
+
+            <label>E-mail:</label>
+            <input type="email" name="email_paciente">
+
+            <label>Cidade:</label>
+            <input type="text" name="cidade_paciente">
+
+            <label>Estado:</label>
+            <input type="text" name="estado_paciente">
+
+            <button type="button">Enviar Dados</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
